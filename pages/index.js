@@ -2,6 +2,8 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Presentation from "../components/Presentation";
+import Professional from "../components/Professional";
+import Works from "../components/Works";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Presentation/>
+        <Professional/>
+        <Works/>
       </div>
       <Footer/>
     </div>
