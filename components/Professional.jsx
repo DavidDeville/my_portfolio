@@ -14,143 +14,61 @@ const Professional = (props) => {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          <div className="xl:w-1/3 md:w-1/2 p-4">
-            <div className="border border-gray-300 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                <svg
-                  className=" fill-current h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 384 512"
-                >
-                  <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
-                </svg>
+          <div className="xl:w2/4 md:w-1/2 p-4">
+            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+              <div className="flex justify-center md:justify-end -mt-16">
+                <img
+                  className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                  src="https://www.virginiebaro.com/wp-content/uploads/2018/01/work-on-laptop-icon-10.jpg"
+                />
               </div>
-              <h2 className="text-lg  font-medium title-font mb-2">
-                L'essentiel du HTML5{" "}
-              </h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
-
-              <div className="text-center mt-2 leading-none flex justify-between w-full">
-                <span className=" mr-3 inline-flex items-center leading-none text-sm  py-1 ">
-                  <svg
-                    className=" fill-current w-4 h-4 mr-2 text-blue-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" />
-                  </svg>
-                  40 min
-                </span>
-                <span className=" inline-flex items-center leading-none text-sm">
-                  <svg
-                    width="22"
-                    height="22"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g fill="none" fillRule="evenodd">
-                      <path
-                        fill="#D8D8D8"
-                        d="M9.2 6.583v11.08h3.5V6.583zm6.4 11.084h3.5V3h-3.5z"
-                      />
-                      <path fill="#667EEA" d="M2.6 17.667h3.5v-7.334H2.6z" />
-                    </g>
-                  </svg>
-                  Débutant
-                </span>
+              <div>
+                <h2 className="text-gray-800 text-2xl font-semibold">
+                  Mes expériences professionnelles
+                </h2>
+                <p className="mt-5 text-gray-600">
+                  - Développeur back-end pour la société <b>ELOSI</b>{" "}
+                  (2020-2021)
+                </p>
+                <p className="mt-5 text-gray-600">
+                  - Formation développeur web à la <b>Webacadémie by EPITECH</b>{" "}
+                  (2019-2021)
+                </p>
+                <p className="mt-5 text-gray-600">
+                  - Traducteur bénévole (français &#x2190;&#x2192; japonais) pour la société <b>YS NET</b>{" "}
+                  (2015-2021)
+                </p>
               </div>
+              <div className="flex justify-end mt-4"></div>
             </div>
           </div>
 
-          <div className="xl:w-1/3 md:w-1/2 p-4">
-            <div className="border border-gray-300 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 italic">
-                <span className="font-bold text-sm ">Php</span>
+          <div className="xl:w-2/4 md:w-1/2 p-4">
+            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+              <div className="flex justify-center md:justify-end -mt-16">
+                <img
+                  className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                  src="data:image/png;base64,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"
+                />
               </div>
-              <h2 className="text-lg  font-medium title-font mb-2">
-                Guide complet des dates en PHP
-              </h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
-
-              <div className="text-center mt-2 leading-none flex justify-between w-full">
-                <span className=" mr-3 inline-flex items-center leading-none text-sm  py-1 ">
-                  <svg
-                    className=" fill-current w-4 h-4 mr-2 text-blue-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" />
-                  </svg>
-                  40 min
-                </span>
-                <span className=" inline-flex items-center leading-none text-sm">
-                  <svg
-                    width="22"
-                    height="22"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g fill="none" fillRule="evenodd">
-                      <path
-                        fill="#D8D8D8"
-                        d="M9.2 6.583v11.08h3.5V6.583zm6.4 11.084h3.5V3h-3.5z"
-                      />
-                      <path fill="#667EEA" d="M2.6 17.667h3.5v-7.334H2.6z" />
-                    </g>
-                  </svg>
-                  Débutant
-                </span>
+              <div>
+                <h2 className="text-gray-800 text-2xl font-semibold">
+                  Ma formation
+                </h2>
+                <p className="mt-5 text-gray-600">
+                  - Titre professionnel de niveau III (équivalent BAC +2){" "}
+                  <b>(2019-2021)</b>
+                </p>
+                <p className="mt-5 text-gray-600">
+                  - L1 Licence de Japonais / Université De Lille III{" "}
+                  <b>(2012-2013)</b>
+                </p>
+                <p className="mt-5 text-gray-600">
+                  - DAEU A (Diplôme d'Accès aux Etudes Universitaires - Littéraire){" "}
+                  <b>(2011-2012)</b>
+                </p>
               </div>
-            </div>
-          </div>
-          <div className="xl:w-1/3 md:w-1/2 p-4">
-            <div className="border border-gray-300 p-6 rounded-lg">
-              <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                <svg
-                  className=" fill-current h-6 w-6 "
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>CSS3 icon</title>
-                  <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
-                </svg>
-              </div>
-              <h2 className="text-lg  font-medium title-font mb-2">CSS avancé</h2>
-              <p className="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waist co, subway tile
-                poke farm.
-              </p>
-
-              <div className="text-center mt-2 leading-none flex justify-between w-full">
-                <span className=" mr-3 inline-flex items-center leading-none text-sm  py-1 ">
-                  <svg
-                    className=" fill-current w-4 h-4 mr-2 text-blue-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" />
-                  </svg>
-                  2h 40 min
-                </span>
-                <span className=" inline-flex items-center leading-none text-sm">
-                  <svg
-                    width="22"
-                    height="22"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g fill="none" fillRule="evenodd">
-                      <path fill="#D8D8D8" d="M15.6 17.667h3.5V3h-3.5z" />
-                      <path fill="#667EEA" d="M9.2 6.583v11.08h3.5V6.583z" />
-                      <path fill="#667EEA" d="M2.6 17.667h3.5v-7.334H2.6z" />
-                    </g>
-                  </svg>
-                  Débutant
-                </span>
-              </div>
+              <div className="flex justify-end mt-4"></div>
             </div>
           </div>
         </div>
