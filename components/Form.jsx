@@ -1,6 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Form = (props) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [sent, setSent] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    let form = {
+      name,
+      email,
+      message
+    }
+
+    const data = {
+      service_id: "service_ww5uxab",
+      template_id: "template_isiqshd",
+      user_id: "user_PcdKiyOkY4PrS7syyIIVp",
+      template_params: form
+    };
+
+    fetch("https://api.emailjs.com/api/v1.0/email/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then(
+      (result) => {
+        console.log(result.statusText);
+        console.log("email sent");
+        setSent("Votre email a bien été envoyé !");
+      },
+      (error) => {
+        console.log(error.statusText);
+      }
+    );
+
+    //e.target.reset();
+  };
+
   return (
     <form className="w-full max-w-lg">
       <div className="flex flex-wrap -mx-3 mb-6">
@@ -15,6 +59,9 @@ const Form = (props) => {
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="nick"
             type="text"
+            name="name"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
           />
         </div>
       </div>
@@ -30,6 +77,9 @@ const Form = (props) => {
             className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="email"
             type="email"
+            name="email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
         </div>
       </div>
@@ -44,6 +94,9 @@ const Form = (props) => {
           <textarea
             className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
             id="message"
+            name="message"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
           ></textarea>
         </div>
       </div>
@@ -52,12 +105,15 @@ const Form = (props) => {
           <button
             className="shadow bg-white hover:bg-teal-400 focus:shadow-outline focus:outline-none text-dark font-bold py-2 px-4 rounded"
             type="button"
+            onClick={(e) => sendEmail(e)}
           >
             Envoyer
           </button>
         </div>
-        <div className="md:w-2/3"></div>
       </div>
+        <div className="md:w-3/3 mt-3">
+          <p style={{color:"white"}}>{sent !== "" ? sent : <></>}</p>
+        </div>
     </form>
   );
 };

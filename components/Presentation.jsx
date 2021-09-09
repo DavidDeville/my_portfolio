@@ -1,8 +1,12 @@
+import { ColorSwatch } from "heroicons-react";
 import React from "react";
 
 const Presentation = (props) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center md:justify-evenly w-full min-h-screen bg-gray-900 mt-5">
+    <div
+      style={{ marginTop: "-8px" }}
+      className="flex flex-col lg:flex-row items-center md:justify-evenly w-full min-h-screen bg-gray-900 mt-5"
+    >
       <div className="mt-5 mb-4 lg:mt-1 lg:mb-1 rounded-lg">
         <div className="bg-gray-100 rounded-lg w-96">
           <img
@@ -16,16 +20,25 @@ const Presentation = (props) => {
               Présentation
             </div>
             <span className="text-sm">
-              Je m'appelle <b>David De ville</b> et je suis <b>développeur back-end</b>. 
-              Actuellement à la recherche d'un emploi, je cherche un poste de développeur <b>PHP/Symfony</b>, mais je suis
-              également ouvert à d'autres propositions liées au développement back-end.
-              <br/>
-              <br/>
-              Si vous souhaitez consulter mon CV au format PDF, c'est <a href="http://google.fr">ici</a>.
+              Je m'appelle <b>David De ville</b> et je suis{" "}
+              <b>développeur back-end</b>. Actuellement à la recherche d'un
+              emploi, je cherche un poste de développeur <b>PHP/Symfony</b>,
+              mais je suis également ouvert à d'autres propositions liées au
+              développement back-end.
+              <br />
+              <br />
+              Si vous souhaitez consulter mon CV au format PDF, c'est{" "}
+              <a
+                href="http://google.fr"
+                style={{ color: "red", fontWeight: "bold" }}
+              >
+                ici
+              </a>
+              .
             </span>
           </div>
           <button className="w-full h-16 text-lg font-extrabold text-gray-100 transition duration-300 bg-indigo-700 rounded-b-lg hover:bg-indigo-800">
-            VIEW RECIPES
+            <span style={{ color: "transparent" }}>VIEW RECIPES</span>
           </button>
         </div>
       </div>
@@ -41,22 +54,13 @@ const Presentation = (props) => {
             Mes expériences professionnelles
           </h2>
           <p className="mt-5 text-gray-600">
+            - Formation développeur web à la <b>Webacadémie by EPITECH</b> (2019-2021)
+          </p>
+          <p className="mt-5 text-gray-600">
             - Développeur back-end pour la société <b>ELOSI</b> (2020-2021)
-          </p>
-          <p className="mt-2 text-gray-600">
-            - Développeur back-end pour la société ELOSI (2020-2021)
-          </p>
-          <p className="mt-2 text-gray-600">
-            - Développeur back-end pour la société ELOSI (2020-2021)
-          </p>
-          <p className="mt-2 text-gray-600">
-            - Développeur back-end pour la société ELOSI (2020-2021)
           </p>
         </div>
         <div className="flex justify-end mt-4">
-          <a href="#" className="text-xl font-medium text-indigo-500">
-            John Doe
-          </a>
         </div>
       </div>
     </div>
