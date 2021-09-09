@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import apiKeys from "../emailkeys";
+import apiKeys from "../keys";
 
 const Form = (props) => {
   const [name, setName] = useState("");
