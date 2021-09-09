@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import apiKeys from "../emailkeys";
 
 const Form = (props) => {
   const [name, setName] = useState("");
@@ -18,9 +19,9 @@ const Form = (props) => {
     }
 
     const data = {
-      service_id: "service_ww5uxab",
-      template_id: "template_isiqshd",
-      user_id: "user_PcdKiyOkY4PrS7syyIIVp",
+      service_id: apiKeys.service_id,
+      template_id: apiKeys.template_id,
+      user_id: apiKeys.user_id,
       template_params: form
     };
 
