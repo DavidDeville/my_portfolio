@@ -4,6 +4,7 @@ import React from "react";
 const Presentation = (props) => {
   return (
     <div
+      id="presentation"
       style={{ marginTop: "-8px" }}
       className="flex flex-col lg:flex-row items-center md:justify-evenly w-full min-h-screen bg-gray-900 mt-5"
     >
@@ -29,7 +30,8 @@ const Presentation = (props) => {
               <br />
               Si vous souhaitez consulter mon CV au format PDF, c'est{" "}
               <a
-                href="http://google.fr"
+                href="https://bdpdkdd.cluster029.hosting.ovh.net/CV_deville_david.pdf"
+                download="CV_deville_david"
                 style={{ color: "red", fontWeight: "bold" }}
               >
                 ici

@@ -2,7 +2,7 @@ import React from "react";
 
 const Professional = (props) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center md:justify-evenly w-full min-h-screen bg-white mt-5">
+    <div id="parcours" className="flex flex-col lg:flex-row items-center md:justify-evenly w-full min-h-screen bg-white mt-5">
       <div className="max-w-6xl mx-auto px-5 py-24 ">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
           <h1 className=" title-font mb-2 text-4xl font-extrabold leading-10 tracking-tight text-left sm:text-5xl sm:leading-none md:text-6xl">
@@ -13,8 +13,8 @@ const Professional = (props) => {
             Le développement web, c'est un apprentissage continu.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
-          <div className="xl:w2/4 md:w-1/2 p-4">
+        <div className="flex flex-wrap -m-4 justify-center">
+          <div className="xl:1/3 md:w-1/3 p-4">
             <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
               <div className="flex justify-center md:justify-end -mt-16">
                 <img
@@ -43,7 +43,7 @@ const Professional = (props) => {
             </div>
           </div>
 
-          <div className="xl:w-2/4 md:w-1/2 p-4">
+          <div className="xl:w-1/3 md:w-1/3 p-4">
             <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
               <div className="flex justify-center md:justify-end -mt-16">
                 <img
@@ -69,6 +69,52 @@ const Professional = (props) => {
                 </p>
               </div>
               <div className="flex justify-end mt-4"></div>
+            </div>
+          </div>
+          <div className="xl:w-1/3 md:w-1/3 p-4">
+            <div className="max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+              <div className="flex justify-center md:justify-end -mt-16 sm:flexwrap">
+                <img
+                  className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                  src="https://static.thenounproject.com/png/3040228-200.png"
+                />
+              </div>
+              <div>
+                <h2 className="text-gray-800 text-2xl font-semibold">
+                  Les technologies
+                </h2>
+                <div className="flex md:flex-wrap md:justify-center flex-wrap justify-evenly">
+                  <img className="mt-5" src="https://i.ibb.co/2nKG5GN/html.png" />
+                  <img
+                    className="mt-5"
+                    src="https://i.ibb.co/6w5YXqd/css.png"
+                  />
+                  <img
+                    className="mt-5"
+                    src="https://i.ibb.co/QmVbxzF/php.png"
+                  />
+                  <img
+                    className="mt-5"
+                    src="https://i.ibb.co/ww6ZTyY/js.png"
+                  />
+                  <img
+                    className="mt-5"
+                    src="https://i.ibb.co/dJfjdsz/symfony.png"
+                  />
+                  <img
+                    className="mt-5"
+                    src="https://i.ibb.co/3RJB9CW/react.png"
+                  />
+                  <img
+                    className="mt-5"
+                    src="https://i.ibb.co/zFs5vZh/mysql.png"
+                  />
+                  <img
+                    className="mt-5"
+                    src="https://i.ibb.co/xh3r225/docker.png"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

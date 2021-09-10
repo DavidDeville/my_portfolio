@@ -3,7 +3,7 @@ import Form from "./Form";
 
 const Footer = (props) => {
   return (
-    <div style={{marginTop: "-50px"}}>
+    <div id="contact" style={{marginTop: "-50px"}}>
       <footer className="bg-gray-800 pt-10 sm:mt-10 pt-10">
         <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
           <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
