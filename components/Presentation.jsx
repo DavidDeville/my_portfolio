@@ -11,7 +11,7 @@ const Presentation = (props) => {
       <div className="mt-5 mb-4 lg:mt-1 lg:mb-1 rounded-lg">
         <div className="bg-gray-100 rounded-lg w-96">
           <img
-            src="https://unsplash.it/640/425"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQHlt3TFF3OhHw/profile-displayphoto-shrink_800_800/0/1517478491918?e=1637193600&v=beta&t=nAjaTHMTSOyLA3UZBXIG5RuGE-EDnyt0_VhlSDAQyrY"
             alt=""
             className="w-full h-48 transition duration-300 rounded-t-lg sm:h-56 opacity-80 hover:opacity-100"
           />

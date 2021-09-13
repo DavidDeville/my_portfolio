@@ -25,7 +25,7 @@ const Works = (props) => {
                   <div>
                     <img
                       className="w-full"
-                      src="https://i.imgur.com/lmYYa2s.png"
+                      src="https://i.ibb.co/8rqkPYj/previously-on.png"
                     />
                     <div className="px-4 py-2">
                       <h1 className="text-xl font-gray-700 font-bold">
@@ -59,7 +59,7 @@ const Works = (props) => {
                   <div>
                     <img
                       className="w-full"
-                      src="https://i.imgur.com/lmYYa2s.png"
+                      src="https://i.ibb.co/NWRFBcp/mvc-blog.png"
                     />
                     <div className="px-4 py-2">
                       <h1 className="text-xl font-gray-700 font-bold">
@@ -92,20 +92,20 @@ const Works = (props) => {
                   <div>
                     <img
                       className="w-full"
-                      src="https://i.imgur.com/lmYYa2s.png"
+                      src="https://i.ibb.co/3TdWkCR/free-ads.png"
                     />
                     <div className="px-4 py-2">
                       <h1 className="text-xl font-gray-700 font-bold">
-                        Tweet Académie
+                        Free Ads
                       </h1>
                       <div className="flex space-x-2 mt-2">
                         <h3 className="text-lg text-gray-600 font-semibold mb-2">
-                          Un clone de Twitter
+                          Un site de petites annonces
                         </h3>
                       </div>
                       <p className="text-sm tracking-normal">
-                        Tweet Acédemie est un projet qui visait à reproduire un
-                        site similaire à Twitter.
+                        Free Ads est un projet qui visait à reproduire un
+                        site similaire à "Le boncoin" (Laravel).
                       </p>
                       <a href="https://github.com/DavidDeville/Tweet_Academie">
                         <button className="mt-12 w-full text-center bg-yellow-400 py-2 rounded-lg">
